@@ -4,7 +4,7 @@ if not gametester_assert(is_string(developerToken),"Missing developer token. Ple
     then return false;
     
 with gametester_get() {
-    self.baseUrl = "https://server.gametester.co/dev-api/";
+    self.baseUrl = "https://server.gametester.gg/dev-api/v1";
     self.apiRequests = ds_map_create();
     self.developerToken = developerToken;
     self.initialized = true;
