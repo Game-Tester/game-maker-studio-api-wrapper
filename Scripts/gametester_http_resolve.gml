@@ -19,7 +19,7 @@ with gametester_get() {
             
             var decodeResult = json_decode(responseString);
             
-            if (decodeResult != -1) && (httpStatus == 200) && (ds_map_find_value(decodeResult, "code") == 0)
+            if (decodeResult != -1) && (httpStatus == 200) && (ds_map_find_value(decodeResult, "code") == -1)
                 then script_execute(onComplete, httpStatus, decodeResult);
                 else script_execute(onError, httpStatus, decodeResult, responseString);
                 
